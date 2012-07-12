@@ -1,0 +1,6 @@
+﻿1>------ Build started: Project: Evan Parks, Configuration: Debug Win32 ------
+1>  gamme.cpp
+1>  LINK : C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.exe not found or not built by the last incremental link; performing full link
+1>gamme.obj : error LNK2019: unresolved external symbol "int __cdecl FindArea(int,int)" (?FindArea@@YAHHH@Z) referenced in function _main
+1>C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.exe : fatal error LNK1120: 1 unresolved externals
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========

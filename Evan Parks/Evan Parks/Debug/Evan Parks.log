@@ -1,0 +1,29 @@
+﻿Build started 7/11/2012 3:25:47 PM.
+     1>Project "C:\Users\Student\Desktop\Evan Parks\Evan Parks\Evan Parks\Evan Parks.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Evan Parks.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Other.cpp fight.cpp
+         Other.cpp
+         Generating Code...
+         Compiling...
+         fight.cpp
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Evan Parks.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.lib" /MACHINE:X86 Debug\array.obj
+         Debug\bluh.obj
+         Debug\come_at_me.obj
+         Debug\corrected.obj
+         "Debug\dice roll.obj"
+         Debug\fight.obj
+         Debug\finalclasspet.obj
+         Debug\gamme.obj
+         Debug\main.obj
+         Debug\Other.obj
+     1>Other.obj : error LNK2005: "public: __thiscall Character::Character(void)" (??0Character@@QAE@XZ) already defined in fight.obj
+     1>C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\Student\Desktop\Evan Parks\Evan Parks\Evan Parks\Evan Parks.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.99
