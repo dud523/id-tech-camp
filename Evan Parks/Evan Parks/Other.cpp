@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <Windows.h>
 #include <stdlib.h>
@@ -42,3 +42,4 @@ int Base_stats::takeDmg(INT D){
 	}
 
 }
+Character::Character (){}*/

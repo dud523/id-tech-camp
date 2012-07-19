@@ -1,10 +1,9 @@
 /*#include <iostream>
-
 #include <time.h>
 #include <Windows.h>
 
 using namespace std;
-//_____________________________________________________________________
+
 int main(){
 	system("color 4");
 	srand(time(0));

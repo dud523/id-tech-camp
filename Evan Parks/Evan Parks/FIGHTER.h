@@ -1,4 +1,4 @@
-#ifndef FIGHTER_H// just added this to prevent multiple includes!!
+/*#ifndef FIGHTER_H// just added this to prevent multiple includes!!
 #define FIGHTER_H
 
 #include <string>
@@ -31,6 +31,6 @@ public:
 	void setName(string name);
 	string getName();
 };
-Character::Character (){}
 
-#endif
+
+#endif*/

@@ -62,17 +62,25 @@
   <ItemGroup>
     <ClCompile Include="array.cpp" />
     <ClCompile Include="bluh.cpp" />
+    <ClCompile Include="bubblesort.cpp" />
     <ClCompile Include="come_at_me.cpp" />
     <ClCompile Include="corrected.cpp" />
     <ClCompile Include="dice roll.cpp" />
     <ClCompile Include="fight.cpp" />
     <ClCompile Include="finalclasspet.cpp" />
+    <ClCompile Include="finalpro.cpp" />
+    <ClCompile Include="finalproject.cpp" />
+    <ClCompile Include="findarray.cpp" />
     <ClCompile Include="gamme.cpp" />
+    <ClCompile Include="hangman.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Other.cpp" />
+    <ClCompile Include="quicksort.cpp" />
+    <ClCompile Include="recursion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FIGHTER.h" />
+    <ClInclude Include="finalproject.h" />
     <ClInclude Include="petclass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

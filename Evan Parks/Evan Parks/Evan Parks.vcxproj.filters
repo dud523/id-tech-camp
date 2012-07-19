@@ -42,16 +42,40 @@
     <ClCompile Include="fight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Other.cpp">
+    <ClCompile Include="bubblesort.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recursion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="findarray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quicksort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hangman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finalproject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Other.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finalpro.cpp">
+      <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="petclass.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="FIGHTER.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="petclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="finalproject.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
