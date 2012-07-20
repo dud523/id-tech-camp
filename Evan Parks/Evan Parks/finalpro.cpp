@@ -13,8 +13,9 @@ Base_stats::Base_stats(){
 	Intellect=20;
 	Strength=25;
 	Charisma=10;
+	Morality=0;
 }
-Base_stats::Base_stats(int H, int M, int C, int D, int E, int S, int Exp){
+Base_stats::Base_stats(int H, int M, int C, int D, int E, int S, int Exp, int G){
 	Health=H;
 	MagicDmg=M;
 	AttackDmg=D;
@@ -22,17 +23,35 @@ Base_stats::Base_stats(int H, int M, int C, int D, int E, int S, int Exp){
 	Strength=S;
 	Charisma=C;
 	Experience=Exp;
+	Morality=G;
 }
-void Base_stats::SetExp(int Exp){
+void Base_stats::setExp(int Exp){
 	Experience=Exp;
 }
 void Base_stats::setHealth(int H){
 	Health=H;
 }
 void Base_stats::setMagicDmg(int M){
+	if (Intellect >= 30)
+	{
+		MagicDmg = rand()%35;
+	}
+
+	if (Intellect <= 29)
+	{
+		MagicDmg = rand()%10;
+	}
 	MagicDmg=M;
 }
 void Base_stats::setAttackDmg(int D){
+	if (Strength >= 30)
+	{
+		AttackDmg = rand()%20;
+	}
+	if (Strength <= 29)
+	{
+		AttackDmg = rand()%10;
+	}
 	AttackDmg=D;
 }
 void Base_stats::setIntellect(int E){
@@ -43,6 +62,12 @@ void Base_stats::setStrength(int S){
 }
 void Base_stats::setCharisma(int C){
 	Charisma=C;
+}
+void Base_stats::setMorality(int G){
+	Morality=G;
+}
+int Base_stats::getMorality(){
+	return Morality;
 }
 int Base_stats::getIntellect(){
 	return Intellect;
@@ -58,8 +83,10 @@ int Base_stats::getHealth(){
 }
 int Base_stats::getAttackDmg(){
 	return AttackDmg;
-};
-
+}
+int Base_stats::getMagicDmg(){
+	return MagicDmg;
+}
 int Base_stats::takeDmg(INT D){
 	Health = Health - D;
 	return Health;
@@ -81,7 +108,6 @@ void stats(Base_stats* player)
 	int cha;
 	int intelligence;
 	int point;
-	int psi;
 	char rpe;
 	char hng;
 	char ugh;
@@ -283,4 +309,29 @@ cha:
 	player->setStrength(strength);
 
 }
+
 Character::Character (){}
+man_stats::man_stats(){
+	MHP=30;
+	MDM=5;
+}
+man_stats::man_stats(int MH, int MD){
+	 MHP = MH;
+	 MDM = MD;
+}
+void man_stats::setMHealth(int MH){
+	MHP = MH;
+}
+void man_stats::setMDamage(int MD){
+	MDM = MD;
+}
+int man_stats::getMHealth(){
+	return MHP;
+}
+int man_stats::getMDamage(){
+	return MDM;
+}
+int man_stats::takeD(INT D){
+	MHP = MHP - D;
+	return MHP;
+}

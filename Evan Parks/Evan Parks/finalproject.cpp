@@ -6,6 +6,11 @@
 #include "finalproject.h"
 using namespace std;
 //variables
+/*
+<b>hello</b> -->make it bold
+<i>hello </i> -->italic
+<u>hello</u> -->underline
+*/
 char input1;
 string name;
 string gender;
@@ -17,11 +22,63 @@ bool pyrok (false);
 string oops;
 string pyro1;
 Base_stats player;
+man_stats man2;
+string pyrodecision1;
+//battle functions
+void BattleMan1(Base_stats* player, man_stats* man)
+{
+	int fight11;
+	cout<< "The man's health is " << man->getMHealth() <<endl;
+	cout<< "Your health is " << player->getHealth() <<endl;
+	cout<<"1. Punch\n\n2. Power\n\n3. Run Away\n\n";
+	cin >> fight11;
+	if (fight11 == 1)
+	{
+		int punch11;
+		punch11 = player->getAttackDmg();
+		int rollp11;
+		rollp11 = rand()%21;
+		if (rollp11<=10)
+		{
+			cout<<"You swing, but miss."<<endl;
+			goto fight12;
+		}
+		if (rollp11>=11)
+		{
+			cout<<"Your fist gave his face a not-so-friendly kiss"<<endl;
+			man->setMHealth(man->takeD(punch11) - man->getMHealth()); 
+			goto fight12;
+			
+		}
+	}
+	if (fight11 == 2)
+	{
+		
+		int magic11;
+		magic11 = player->getMagicDmg();
+		int rollm11;
+		rollm11 = rand()%31;
+		if (rollm11<=20)
+		{
+			cout<<"You try to fry him, but you just can't <i> fire </i>\n";
+			goto fight12;
+		}
+		if (rollm11>=21)
+		{
+			cout<<"You launch a fire ball right at him."<<endl;
+			man->setMHealth(man->takeD(magic11) - man->getMHealth());
+			goto fight12;
+		}
+	}
+	fight12:
+	//int fight12;
+	cout<<"The rest of the fight will be included int the full version!"<<endl;
+}
 //main
 int main()
 {        
 title:
-	cout << "	 		    ! A P O C A L Y P S E ! \n		   	      ## the life after \n\n\n\n\n\n\n";
+	cout << "	 		    ! A P O C A L Y P S E ! \n		   	      ## the life after \n\n\n		                 *the demo*\n\n\n\n\n";
 input1:
 	cout << "[S]tart \n\n[I]nstructions \n\n[B]ackstory \n\n";
 	Beep(rand(),rand());
@@ -149,7 +206,7 @@ pyro1:
 	}
 	if (pyro1 == "punch_goat")
 	{
-		cout<< "The goat was suffeciently taught a lesson. How dare it stare at you like that. The lady looks surprised though." <<endl;
+		cout<< "The goat was suffeciently taught a lesson. How dare it stare at you like that.  The lady looks surprised though." <<endl;
 		cout<< "You got +1 strength." << endl;
 		player.setStrength(player.getStrength()+1);
 		goto pyro1;
@@ -157,14 +214,17 @@ pyro1:
 	if (pyro1=="ask_about_goat")
 	{
 		cout<<"What goat?"<<endl;
+		goto pyro1;
 	}
 	if (pyro1=="ask_girl_about_goat")
 	{
 		cout<<"What goat?"<<endl;
+		goto pyro1;
 	}
 	if (pyro1=="ask_woman_about_goat")
 	{
 		cout<<"What goat?"<<endl;
+		goto pyro1;
 	}
 	if (pyro1 == "talk_woman")
 	{
@@ -213,10 +273,7 @@ pyro1:
 	}
 	if (pyro1== "stats")
 	{
-		cout<<"Health: "<<player.getHealth()<<endl;
-		cout<<"Strength: "<<player.getStrength()<<endl;
-		cout<<"Intelligence: "<<player.getIntellect()<<endl;
-		cout<<"Charisma: "<<player.getCharisma()<<endl;
+		printstats(&player);
 		goto pyro1;
 	}
 	else 
@@ -234,15 +291,60 @@ pyrotowns:
 	cin>>goclark;
 	if (goclark == 1)
 	{
-		cout<<"You head over to the crowd in the Town Center, there is a guard wailing on a teenage boy, another guard is holding back a woman who is in tears, presumably the boy's mother"<<endl;
+		
+		cout<<"You head over to the crowd in the Town Center, there is a man wailing on a teenage boy, a guard is holding back a woman who is in tears, presumably the boy's mother"<<endl;
 		cout<<"\n\n! MORAL DECISION !\n\n";
+		cout<<"Will you walk away, help the man, or help the boy?"<<endl;
+		cin >> pyrodecision1;
+		if(pyrodecision1=="help_boy")
+		{
+			if (rand()%21 >= 5)
+			{
+				int fight1;
+				cout<<"You push your way through the crowd to the boy, when you reach them however the boy was beaten to death."<<endl;
+				cout<<"The crowd disperses, and all thats left in the Center is you, the man and the corpse."<<endl;
+				cout<<"The man look very angry."<<endl;
+				cout<<"'What do you want, kid?'\n\n";
+				choices:
+				cout<<"1. Why did you kill that boy?!\n\n2.Your death.\n\n3. Nothing";
+				cin>>fight1;
+				if (fight1== 1)
+				{
+					cout<<"THE REST OF THIS WILL BE COMPLETED IN THE FULL VERSION."<<endl;
+					system("pause");
+					return 0;
+				}
+				if (fight1 == 2)
+				{
+					cout<< BattleMan1 << endl;
+					system("pause");
+					return 0;
+				}
+				if (fight1 == 3)
+				{
+
+				}
+				else
+				{
+					cout<<"Invalid answer."<<endl;
+					goto choices;
+				}
+			}
+		}
 	}
 	if (goclark == 2)
 	{
-
-	}
+		cout<<"TO BE COMPLETED IN THE FULL VERSION."<<endl;
 	system("pause");
 	return 0;
+	}
+	if (goclark == 3)
+	{
+		cout<<"TO BE COMPLETED IN THE FULL VERSION."<<endl;
+	system("pause");
+	return 0;
+	}
+	
 telestory:
 	cout <<"\n\n\n";
 	cout << "Your head feels a little more cleared after all that, you realize there\nis another person in the room with you." << endl;
@@ -267,6 +369,7 @@ telestory:
 		cout << "They look worried." << endl;
 	}
 	cout << "What do you do?" << endl;
+	cout << "MORE WILL BE AVALABLE IN FULL VERSION" << endl;
 	system("pause");
 	return 0;
 clairstory:
@@ -293,6 +396,7 @@ clairstory:
 		cout << "They look worried." << endl;
 	}
 	cout << "What do you do?" << endl;
+	cout << "MORE WILL BE AVALABLE IN FULL VERSION" << endl;
 	system("pause");
 	return 0;
 }

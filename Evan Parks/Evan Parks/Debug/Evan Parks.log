@@ -1,13 +1,15 @@
-﻿Build started 7/19/2012 2:02:49 PM.
+﻿Build started 7/20/2012 11:17:47 AM.
      1>Project "C:\Users\Student\Desktop\Evan Parks\Evan Parks\Evan Parks\Evan Parks.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Evan Parks.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt finalproject.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt finalpro.cpp finalproject.cpp
          finalproject.cpp
-     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(272): warning C4102: 'clairstory' : unreferenced label
-     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(246): warning C4102: 'telestory' : unreferenced label
-     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(136): warning C4102: 'pyrostory' : unreferenced label
+     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(375): warning C4102: 'clairstory' : unreferenced label
+     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(348): warning C4102: 'telestory' : unreferenced label
+     1>c:\users\student\desktop\evan parks\evan parks\evan parks\finalproject.cpp(193): warning C4102: 'pyrostory' : unreferenced label
+         finalpro.cpp
+         Generating Code...
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Evan Parks.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Desktop\Evan Parks\Evan Parks\Debug\Evan Parks.lib" /MACHINE:X86 Debug\array.obj
          Debug\bluh.obj
@@ -37,4 +39,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.32
+Time Elapsed 00:00:01.80
